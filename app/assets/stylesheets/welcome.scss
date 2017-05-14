@@ -5,32 +5,12 @@
 @import "bootstrap";
 
 .container{
-    max-width: 85%px;
-    margin: 0 auto;
     text-align: center;
     
     ul{
-        color: #fff;
         padding: 14px;
         text-align: center;
         
-        li{
-            margin-right:20px;
-        }
     }
-    
-    .navbar-nav{
-        position: relative;
-        left:20%;
-    }
-}
-
-@media (min-width: 768px){
-    container{
-        .navbar-nav{
-            left:0;
-        }
-    }
-    
     
 }
