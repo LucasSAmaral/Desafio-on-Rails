@@ -4,3 +4,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.container{
+     table{
+         th,td{
+             text-align: center;
+             padding: 5px;
+         }
+     }   
+}
