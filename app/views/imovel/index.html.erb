@@ -1,0 +1,35 @@
+<h1>Listing Imoveis</h1>
+ 
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Tipo</th>
+    <th>Valor</th>
+    <th>Valor IPTU</th>
+    <th>Valor Condominio</th>
+    <th>Número de Quartos</th>
+    <th>Número de Suites</th>
+    <th>Número de Banheiros</th>
+    <th>Número de Vagas</th>
+    <th>Área Total</th>
+    <th>Extras</th>
+  </tr>
+ 
+  <% @imovel.each do |imovel| %>
+    <tr>
+      <td><%= imovel.codigo %></td>
+      <td><%= imovel.tipo %></td>
+      <td><%= imovel.valor %></td>
+      <td><%= imovel.valorIPTU %></td>
+      <td><%= imovel.valorCondominio %></td>
+      <td><%= imovel.numQUARTOS %></td>
+      <td><%= imovel.numSUITES %></td>
+      <td><%= imovel.numBANHEIROS %></td>
+      <td><%= imovel.numVAGAS %></td>
+      <td><%= imovel.areaTOTAL %></td>
+      <td><%= imovel.extras %></td>
+      <td><%= link_to 'Show', imovel_path(imovel) %></td>
+      <td><%= link_to 'Edit', edit_imovel_path(imovel) %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,66 @@
+<% provide(:title, "Editar Imoveis") %>
+<h1>Editar Imoveis</h1>
+
+
+    <%= form_for(@imovel) do |f| %>
+      
+  <p>
+    <%= f.label :codigo %><br>
+    <%= f.text_field :codigo %>
+  </p>
+ 
+  <p>
+    <%= f.label :tipo %><br>
+    <%= f.text_area :tipo %>
+  </p>
+  
+  <p>
+    <%= f.label :valor %><br>
+    <%= f.text_area :valor %>
+  </p>
+   
+   <p>
+    <%= f.label :valorIPTU %><br>
+    <%= f.text_area :valorIPTU %>
+  </p>
+   
+   <p>
+    <%= f.label :valorCondominio %><br>
+    <%= f.text_area :valorCondominio %>
+  </p>
+   
+   <p>
+    <%= f.label :numQUARTOS %><br>
+    <%= f.text_area :numQUARTOS %>
+  </p>
+   
+   <p>
+    <%= f.label :numSUITES%><br>
+    <%= f.text_area :numSUITES %>
+  </p>
+   
+   <p>
+    <%= f.label :numBANHEIROS%><br>
+    <%= f.text_area :numBANHEIROS %>
+  </p>
+   
+   <p>
+    <%= f.label :numVAGAS%><br>
+    <%= f.text_area :numVAGAS %>
+  </p>
+  
+  <p>
+    <%= f.label :areaTOTAL%><br>
+    <%= f.text_area :areaTOTAL %>
+  </p>
+   
+   <p>
+    <%= f.label :extras%><br>
+    <%= f.text_area :extras %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Add" %>
+  </p>
+<% end %>
+

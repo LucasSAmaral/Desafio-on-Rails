@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: 1
+  tipo: MyString
+  valor: 1.5
+  valorIPTU: 1.5
+  valorCondominio: 1.5
+  numQUARTOS: 1
+  numSUITES: 1
+  numBANHEIROS: 1
+  numVAGAS: 1
+  areaTOTAL: 1.5
+  extras: MyString
+
+two:
+  codigo: 1
+  tipo: MyString
+  valor: 1.5
+  valorIPTU: 1.5
+  valorCondominio: 1.5
+  numQUARTOS: 1
+  numSUITES: 1
+  numBANHEIROS: 1
+  numVAGAS: 1
+  areaTOTAL: 1.5
+  extras: MyString
