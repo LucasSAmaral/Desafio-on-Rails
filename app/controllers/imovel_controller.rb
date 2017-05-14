@@ -47,7 +47,7 @@ class ImovelController < ApplicationController
     private
     
         def imovel_params
-            params.require(:imovel).permit(:codigo, :tipo, :valor, :valorIPTU, :valorCONDOMINIO, :numQUARTOS, :numSUITES, :numBANHEIROS, :numVAGAS, :areaTOTAL, :extras)
+            params.require(:imovel).permit(:codigo, :tipo, :valor, :valorIPTU, :valorCondominio, :numQUARTOS, :numSUITES, :numBANHEIROS, :numVAGAS, :areaTOTAL, :extras)
         end
     
     
