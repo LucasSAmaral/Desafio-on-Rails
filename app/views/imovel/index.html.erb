@@ -29,7 +29,9 @@
       <td><%= imovel.areaTOTAL %></td>
       <td><%= imovel.extras %></td>
       <td><%= link_to 'Show', imovel_path(imovel) %></td>
-      <td><%= link_to 'Edit', edit_imovel_path(imovel) %></td>
+      <td><%= link_to 'Editar', edit_imovel_path(imovel) %></td>
+      <td><%= link_to "delete", imovel, method: :delete,
+                                  data: { confirm: "Certeza?" } %></td>
     </tr>
   <% end %>
 </table>
