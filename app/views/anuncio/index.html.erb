@@ -1,0 +1,28 @@
+
+ <div class="container">
+   <h1>Listando Anúncios</h1>
+   <div class="col-xs-12">
+<table>
+  <tr>
+    <th>Título</th>
+    <th>Descrição</th>
+    <th>Depoimento Dono</th>
+    <th>Imagem</th>
+  </tr>
+ 
+  <% @anuncio.each do |anuncio| %>
+    <tr>
+      <td><%= anuncio.titulo %></td>
+      <td><%= anuncio.descricao %></td>
+      <td><%= anuncio.depoimentoDONO %></td>
+      <td><%= image_tag anuncio.image %></td>
+      <td><%= link_to 'Show', anuncio_path(anuncio) %></td>
+      <td><%= link_to 'Editar', edit_anuncio_path(anuncio) %></td>
+      <td><%= link_to "delete", anuncio, method: :delete,
+                                  data: { confirm: "Certeza?" } %></td>
+    </tr>
+  <% end %>
+</table>
+
+</div>
+</div>
