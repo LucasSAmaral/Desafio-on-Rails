@@ -1,42 +1,70 @@
+<div class="container">
+    <h1>Listando Imoveis</h1>
+    <div class="col-xs-12">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <tr>
+                    <th>Código</th>
+                    <th>Tipo</th>
+                    <th>Valor</th>
+                    <th>Valor IPTU</th>
+                    <th>Valor Condominio</th>
+                    <th>Número de Quartos</th>
+                    <th>Número de Suites</th>
+                    <th>Número de Banheiros</th>
+                    <th>Número de Vagas</th>
+                    <th>Área Total</th>
+                    <th>Extras</th>
+                </tr>
 
- <div class="container">
-   <h1>Listando Imoveis</h1>
-   <div class="col-xs-12">
-<table>
-  <tr>
-    <th>Código</th>
-    <th>Tipo</th>
-    <th>Valor</th>
-    <th>Valor IPTU</th>
-    <th>Valor Condominio</th>
-    <th>Número de Quartos</th>
-    <th>Número de Suites</th>
-    <th>Número de Banheiros</th>
-    <th>Número de Vagas</th>
-    <th>Área Total</th>
-    <th>Extras</th>
-  </tr>
- 
-  <% @imovel.each do |imovel| %>
-    <tr>
-      <td><%= imovel.codigo %></td>
-      <td><%= imovel.tipo %></td>
-      <td><%= imovel.valor %></td>
-      <td><%= imovel.valorIPTU %></td>
-      <td><%= imovel.valorCondominio %></td>
-      <td><%= imovel.numQUARTOS %></td>
-      <td><%= imovel.numSUITES %></td>
-      <td><%= imovel.numBANHEIROS %></td>
-      <td><%= imovel.numVAGAS %></td>
-      <td><%= imovel.areaTOTAL %></td>
-      <td><%= imovel.extras %></td>
-      <td><%= link_to 'Show', imovel_path(imovel) %></td>
-      <td><%= link_to 'Editar', edit_imovel_path(imovel) %></td>
-      <td><%= link_to "delete", imovel, method: :delete,
-                                  data: { confirm: "Certeza?" } %></td>
-    </tr>
-  <% end %>
-</table>
+                <% @imovel.each do |imovel| %>
+                    <tr>
+                        <td>
+                            <%= imovel.codigo %>
+                        </td>
+                        <td>
+                            <%= imovel.tipo %>
+                        </td>
+                        <td>
+                            <%= imovel.valor %>
+                        </td>
+                        <td>
+                            <%= imovel.valorIPTU %>
+                        </td>
+                        <td>
+                            <%= imovel.valorCondominio %>
+                        </td>
+                        <td>
+                            <%= imovel.numQUARTOS %>
+                        </td>
+                        <td>
+                            <%= imovel.numSUITES %>
+                        </td>
+                        <td>
+                            <%= imovel.numBANHEIROS %>
+                        </td>
+                        <td>
+                            <%= imovel.numVAGAS %>
+                        </td>
+                        <td>
+                            <%= imovel.areaTOTAL %>
+                        </td>
+                        <td>
+                            <%= imovel.extras %>
+                        </td>
+                        <td>
+                            <%= link_to 'Show', imovel_path(imovel) %>
+                        </td>
+                        <td>
+                            <%= link_to 'Editar', edit_imovel_path(imovel) %>
+                        </td>
+                        <td>
+                            <%= link_to "delete", imovel, method: :delete, data: { confirm: "Deseja realmente deletar o registro?" } %>
+                        </td>
+                    </tr>
+                    <% end %>
+            </table>
 
-</div>
+        </div>
+    </div>
 </div>
