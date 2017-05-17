@@ -1,32 +1,38 @@
 <div class="container">
-    
+
     <div class="row">
-        
+
         <h1>Registro de Anúncio</h1>
 
-<p>
-  <strong>Título:</strong>
-  <%= @anuncio.titulo %>
-</p>
- 
-<p>
-  <strong>Descrição:</strong>
-  <%= @anuncio.descricao %>
-</p>
+        <div class="content">
+
+            <p>
+                <strong>Título:</strong>
+                <%= @anuncio.titulo %>
+            </p>
+
+            <p>
+                <strong>Descrição:</strong>
+                <%= @anuncio.descricao %>
+            </p>
 
 
-<p>
-    <strong>Depoimento do Dono:</strong>
-    <%= @anuncio.depoimentoDONO %>
-</p>
+            <p>
+                <strong>Depoimento do Dono:</strong>
+                <%= @anuncio.depoimentoDONO %>
+            </p>
 
-<p>
-    <strong>Identificação do Imóvel:</strong>
-    <%= @anuncio.imovel_id %>
-</p>
+            <p>
+                <strong>Identificação do Imóvel:</strong>
+                <%= @anuncio.imovel_id %>
+            </p>
 
-<p>
-    <%= image_tag @anuncio.image %>
-</p>
-</div>
+            <p>
+                <%= image_tag @anuncio.image %>
+            </p>
+            
+            <a class="btn btn-primary btn-lg" href="/anuncio">Voltar</a>
+            
+        </div>
+    </div>
 </div>

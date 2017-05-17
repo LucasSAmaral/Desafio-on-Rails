@@ -1,66 +1,75 @@
 <% provide(:title, "Editar Imoveis") %>
+
+<div class="container">
+
+    <div class="row">
+     
 <h1>Editar Imoveis</h1>
 
-
+<div class="content">
     <%= form_for(@imovel) do |f| %>
       
   <p>
-    <%= f.label :codigo %><br>
-    <%= f.text_field :codigo %>
+    <%= f.label :codigo %>
+    <%= f.text_field :codigo, :class => "form-control" %>
   </p>
  
   <p>
-    <%= f.label :tipo %><br>
-    <%= f.text_area :tipo %>
+    <%= f.label :tipo %>
+    <%= f.text_field :tipo, :class => "form-control"%>
   </p>
   
   <p>
-    <%= f.label :valor %><br>
-    <%= f.text_area :valor %>
+    <%= f.label :valor %>
+    <%= f.text_field :valor, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :valorIPTU %><br>
-    <%= f.text_area :valorIPTU %>
+    <%= f.label :valorIPTU %>
+    <%= f.text_field :valorIPTU, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :valorCondominio %><br>
-    <%= f.text_area :valorCondominio %>
+    <%= f.label :valorCondominio %>
+    <%= f.text_field :valorCondominio, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :numQUARTOS %><br>
-    <%= f.text_area :numQUARTOS %>
+    <%= f.label :numQUARTOS %>
+    <%= f.text_field :numQUARTOS, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :numSUITES%><br>
-    <%= f.text_area :numSUITES %>
+    <%= f.label :numSUITES%>
+    <%= f.text_field :numSUITES, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :numBANHEIROS%><br>
-    <%= f.text_area :numBANHEIROS %>
+    <%= f.label :numBANHEIROS%>
+    <%= f.text_field :numBANHEIROS, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :numVAGAS%><br>
-    <%= f.text_area :numVAGAS %>
-  </p>
+    <%= f.label :numVAGAS%>
+    <%= f.text_field :numVAGAS, :class => "form-control" %>
+   </p>
   
   <p>
-    <%= f.label :areaTOTAL%><br>
-    <%= f.text_area :areaTOTAL %>
+    <%= f.label :areaTOTAL%>
+    <%= f.text_field :areaTOTAL, :class => "form-control" %>
   </p>
    
    <p>
-    <%= f.label :extras%><br>
-    <%= f.text_area :extras %>
+    <%= f.label :extras%>
+    <%= f.text_area :extras, :class => "form-control" %>
   </p>
  
   <p>
-    <%= f.submit "Add" %>
+    <%= f.submit "Salvar", :class => "btn btn-primary btn-lg margin-t-10" %>
+    <a href="/imovel" class="btn btn-primary btn-lg margin-t-10">voltar</a>
   </p>
 <% end %>
 
+</div>
+</div>
+</div>
