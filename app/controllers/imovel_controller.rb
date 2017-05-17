@@ -36,8 +36,8 @@ class ImovelController < ApplicationController
     end
     
     def destroy
-      
-       Imovel.find(params[:id]).destroy
+     
+      Imovel.find(params[:id]).destroy
       flash[:success] = "Imóvel deletado"
       redirect_to imovel_index_path
     

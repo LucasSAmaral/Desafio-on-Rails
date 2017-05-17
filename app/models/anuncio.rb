@@ -7,4 +7,7 @@ class Anuncio < ApplicationRecord
                      size: { in: 0..500.kilobytes }
    
    belongs_to :imovel
+   
+   validates_presence_of :imovel_id
+   validates_associated :imovel
 end

@@ -47,7 +47,7 @@ class AnuncioController < ApplicationController
     private
     
         def anuncio_params
-            params.require(:anuncio).permit(:titulo, :descricao, :depoimentoDONO, :image)
+            params.require(:anuncio).permit(:titulo, :descricao, :depoimentoDONO, :imovel_id, :image)
         end
     
 end
