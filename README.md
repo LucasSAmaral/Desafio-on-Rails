@@ -1,24 +1,13 @@
-# README
+# Desafio on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Checkout https://imobiliaria-on-rails.herokuapp.com/ to test it.
 
-Things you may want to cover:
+I made this to see how cool Ruby on Rais is, and I liked it!
 
-* Ruby version
+It's a Real Estate system prototype.
 
-* System dependencies
+I know the layout is simple, but I focused on the funtionalities.
 
-* Configuration
+You can add and show properties and also add and show "real estate ads" (with images).
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I used cloud9 as IDE, bootstrap and Heroku for deployment and host the database.
