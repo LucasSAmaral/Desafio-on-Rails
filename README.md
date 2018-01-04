@@ -2,7 +2,7 @@
 
 Checkout https://imobiliaria-on-rails.herokuapp.com/ to test it.
 
-I made this to see how cool Ruby on Rais is, and I liked it!
+I made this to see how cool Ruby on Rails is, and I liked it!
 
 It's a Real Estate system prototype.
 
